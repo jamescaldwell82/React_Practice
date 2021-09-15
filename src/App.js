@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Profile from './components/Profile/Profile';
+import Projects from './components/Projects/Projects';
 
 function App() {
  const [showContent, setShowContent] = useState('Home');
@@ -14,11 +16,11 @@ const handleContentCallback = (content) => {
       <Header handleContentCallback={handleContentCallback} />
 
       {showContent === 'Home' &&
-        <h1>Home</h1>
+       <Profile />
       }
 
-      {showContent === 'About' &&
-        <h1>About</h1>
+      {showContent === 'Projects' &&
+        <Projects />
       }
     </div>
   );

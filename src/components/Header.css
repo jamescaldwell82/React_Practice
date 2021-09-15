@@ -1,114 +1,126 @@
-*{
-    outline: unset;
-    border: none;
-    padding: 0;
-    margin: 0;
-    background: transparent;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@300;400;500;700&family=Fira+Sans:wght@300;400;700&display=swap");
+
+/* 
+    Fonts
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Sans', sans-serif;
+*/
+
+* {
+  outline: unset;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
 }
 
 button.navbar-brand {
-    font-size: 2em;
-    color: rgb(255, 255, 255);
-    transition: .5s ease;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  transition: 0.75s ease;
+}
+
+button.navbar-brand:hover {
+    color: rgb(235, 0, 0);
 }
 
 header {
-    background-color: #5e5e5e;
+  background-color: #1F1F1F;
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
 }
 
 nav div.hamburger-outer {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    height: 2.25em;
-    width: 2.25em;
-    border-radius: 2px;
-    overflow: hidden;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  height: 2.25em;
+  width: 2.25em;
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 nav div.hamburger-outer:hover {
-    cursor:crosshair;
+  cursor: pointer;
 }
 
 nav div.hamburger-inner {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: .25em;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0.25em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
 }
 
 nav div.hamburger-inner:nth-child(2) {
-    position: absolute;
-    top: .75em;
-    height: .25em;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
+  position: absolute;
+  top: 0.75em;
+  height: 0.25em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
 }
 
 nav div.hamburger-inner:last-child {
-    position: absolute;
-    top: 1.5em;
-    height: .25em;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
+  position: absolute;
+  top: 1.5em;
+  height: 0.25em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
 }
 
 div.menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 400px;
-    height: 100%;
-    z-index: 1000;
-    transition: 150ms;
-    background-image: linear-gradient(to bottom, #5e5e5e 50%, #777 85%, #aaa);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  z-index: 1000;
+  transition: 150ms;
+  background-image: linear-gradient(to bottom, #1F1F1F 38%, #3D3D3D);
 }
-
 
 button.close-menu {
-    background: transparent;
-    outline: unset;
-    border: unset;
-    position: absolute;
-    top: 0;
-    right: .75em;
-    font-size: 3em;
-    color: white;
-    transition: 2s ease;
+  background: transparent;
+  outline: unset;
+  border: unset;
+  position: absolute;
+  top: 0;
+  right: 0.4em;
+  font-size: 5em;
+  color: white;
+  transition: 2s ease;
 }
 
-button.close-menu:focus, button.close-menu:active {
-    outline: unset;
-    border: unset;
+button.close-menu:focus,
+button.close-menu:active {
+  outline: unset;
+  border: unset;
 }
 button.close-menu:hover,
 div.menu ul li:hover,
 a.navbar-brand:hover {
-    text-decoration: none;
-    color: rgb(230, 226, 42);
-    cursor: crosshair;
-
+  text-decoration: none;
+  color: rgb(235,0,0);
+  cursor: pointer;
 }
 
-
 div.menu ul {
-    text-align: center;
-    list-style: none;
-    margin-top: 3em;
-    padding: 0;
+  text-align: center;
+  list-style: none;
+  margin-top: 3em;
+  padding: 2em 0;
 }
 
 div.menu ul li {
-    font-weight: 600;
-    padding-top: 20px;
-    font-size: 1.5em;
-    color: white;
-    font-variant: small-caps;
-    letter-spacing: 1px;
-    transition: .5s ease;
+  padding-top: .05em;
+  font-weight: normal;
+  font-family: 'Fira Code', monospace;
+  font-size: 2.25em;
+  color: white;
+  transition: 0.75s ease;
 }

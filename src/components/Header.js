@@ -24,7 +24,7 @@ export default function Header(props) {
                         <button onClick={() => setToggleNav(false)} className="close-menu">&times;</button>
                         <ul>
                             <li onClick={() => handleContentChange('Home')}>Profile</li>
-                            <li onClick={() => handleContentChange('About')}>About</li>
+                            <li onClick={() => handleContentChange('Projects')}>Projects</li>
                         </ul>
                     </div>
                 }
